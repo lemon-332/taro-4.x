@@ -10,8 +10,8 @@ export const useCounterStore = defineStore('counter', {
   actions: {
     increment() {
       this.count++
-    },
-  },
+    }
+  }
 })
 
 // You can even use a function (similar to a component setup()) to define a Store for more advanced use cases:

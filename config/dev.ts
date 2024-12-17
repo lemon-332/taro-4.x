@@ -1,6 +1,6 @@
-import type { UserConfigExport } from "@tarojs/cli";
+import type { UserConfigExport } from '@tarojs/cli'
 export default {
-   logger: {
+  logger: {
     quiet: false,
     stats: true
   },
