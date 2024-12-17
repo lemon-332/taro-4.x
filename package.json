@@ -35,6 +35,7 @@
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.7.7",
+    "@nutui/nutui-taro": "^4.3.13",
     "@tarojs/components": "4.0.8",
     "@tarojs/helper": "4.0.8",
     "@tarojs/plugin-framework-vue3": "4.0.8",
@@ -56,6 +57,7 @@
   "devDependencies": {
     "@babel/core": "^7.8.0",
     "@babel/plugin-proposal-class-properties": "7.14.5",
+    "@nutui/auto-import-resolver": "^1.0.0",
     "@tarojs/cli": "4.0.8",
     "@tarojs/taro-loader": "4.0.8",
     "@tarojs/webpack5-runner": "4.0.8",
@@ -74,6 +76,7 @@
     "stylelint": "^14.4.0",
     "tsconfig-paths-webpack-plugin": "^4.0.1",
     "typescript": "^5.1.0",
+    "unplugin-vue-components": "^0.28.0",
     "vue-loader": "^17.0.0",
     "webpack": "5.91.0"
   }
