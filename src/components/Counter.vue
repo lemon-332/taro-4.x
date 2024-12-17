@@ -1,8 +1,8 @@
 <template>
-  <view>
-    <text class="title">{{ counter.count }}</text>
-    <view class="button" @tap="onAdd">ADD</view>
-  </view>
+  <div>
+    <span class="title">{{ counter.count }}</span>
+    <div class="button" @tap="onAdd">ADD</div>
+  </div>
 </template>
 
 <script>
