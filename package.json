@@ -49,6 +49,7 @@
     "@tarojs/runtime": "4.0.8",
     "@tarojs/shared": "4.0.8",
     "@tarojs/taro": "4.0.8",
+    "axios-miniprogram": "^2.7.2",
     "pinia": "^2.0.10",
     "vue": "^3.2.24"
   },
