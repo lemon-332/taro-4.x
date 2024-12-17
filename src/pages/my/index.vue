@@ -1,17 +1,21 @@
 <template>
-  <div class="my">
-    <Counter />
+  <div class="create">
+    <button class="btn" @click="goUserDetailPage">关于跳转</button>
   </div>
 </template>
 
-<script>
-import './index.scss'
-import Counter from '../../components/Counter.vue'
-
-export default {
-  name: 'Index',
-  components: {
-    Counter
-  }
+<script lang="ts" setup>
+import Taro from '@tarojs/taro'
+const goUserDetailPage = () => {
+  Taro.navigateTo({ url: '/pagesSub/about/index' })
 }
 </script>
+
+<style lang="scss">
+.create {
+  padding: 0 15px;
+  .btn{
+    display: inline;
+  }
+}
+</style>

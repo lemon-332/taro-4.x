@@ -1,26 +1,11 @@
-// https://pinia.esm.dev/introduction.html
 import { defineStore } from 'pinia'
+import { ref } from 'vue'
+export const useCounterStore = defineStore('count', () => {
+  const count = ref(3434)
 
-export const useCounterStore = defineStore('counter', {
-  state: () => {
-    return { count: 0 }
-  },
-  // could also be defined as
-  // state: () => ({ count: 0 })
-  actions: {
-    increment() {
-      this.count++
-    }
+  function increment() {
+    count.value++
   }
-})
 
-// You can even use a function (similar to a component setup()) to define a Store for more advanced use cases:
-// export const useCounterStore = defineStore('counter', () => {
-//   const count = ref(0)
-//
-//   function increment() {
-//     count.value++
-//   }
-//
-//   return {count, increment}
-// })
+  return { count, increment }
+})

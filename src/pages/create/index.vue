@@ -4,14 +4,12 @@
   </div>
 </template>
 
-<script>
-import './index.scss'
+<script lang="ts" setup>
 import Counter from '@/components/Counter.vue'
-
-export default {
-  name: 'Index',
-  components: {
-    Counter
-  }
-}
 </script>
+
+<style lang="scss">
+.create {
+  padding: 0 15px;
+}
+</style>

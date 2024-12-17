@@ -6,6 +6,12 @@ export default {
     navigationBarTitleText: 'WeChat',
     navigationBarTextStyle: 'black'
   },
+  subPackages: [
+    {
+      root: 'pagesSub/about',
+      pages: ['index']
+    }
+  ],
   tabBar: {
     color: '#7A7E83',
     selectedColor: '#d81e06',

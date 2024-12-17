@@ -1,15 +1,17 @@
 <template>
   <div class="create">
     <Counter />
-    <div>{{ count.count }}</div>
+    <div @click="goUserDetailPage">12211</div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import Taro from '@tarojs/taro'
 import Counter from '@/components/Counter.vue'
-import { useStore } from '@/stores'
-
-const count = useStore('count')
+const goUserDetailPage = () => {
+  // Taro.navigateTo({ url: '/pagesSub/about/index' })
+  console.log('haha')
+}
 </script>
 
 <style lang="scss">
