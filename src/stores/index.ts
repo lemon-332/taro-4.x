@@ -1,6 +1,6 @@
 import { createPinia } from 'pinia'
-import { useAppStore } from './app'
-import { useCounterStore } from './counter'
+import { useAppStore } from './modules/app'
+import { useCounterStore } from './modules/counter'
 
 export const store = createPinia()
 
