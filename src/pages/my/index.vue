@@ -1,34 +1,31 @@
 <template>
   <div class="create">
-    <button class="btn" @click="goUserDetailPage">{{ name }}</button>
-    <nut-button>{{ name }}</nut-button>
-    <nut-date-picker
-      v-model="val"
-      :min-date="min"
-      :max-date="max"
-      :three-dimensional="false"
-      @confirm="confirm"
-    ></nut-date-picker>
+    <nut-button @click="handelLocale">切换语言</nut-button>
+    {{ $t('common.confirm') }}
   </div>
 </template>
 
 <script lang="ts" setup>
-import { getBookList } from '@/services/apis/user'
 import { ref } from 'vue'
+import { setLocale, getLocale } from '@/utils/statusMange'
+import Taro from '@tarojs/taro'
 
-const min = new Date(2020, 0, 1)
-const max = new Date(2025, 10, 1)
-const val = ref(new Date(2022, 4, 10))
-const confirm = ({ selectedValue }) => {
-  console.log(selectedValue)
-}
-const name = ref('张三')
-const goUserDetailPage = () => {
-  _getBookList()
-}
-const _getBookList = async () => {
-  const res = await getBookList()
-  name.value = res.data
+const handelLocale = () => {
+  Taro.showModal({
+    title: '提示',
+    content: '切换语言需要重新进入小程序，是否确认切换',
+    success: function (res) {
+      if (res.confirm) {
+        const locale = getLocale()
+        if (locale === 'zh') {
+          setLocale('en')
+        } else {
+          setLocale('zh')
+        }
+        Taro.exitMiniProgram()
+      }
+    }
+  })
 }
 </script>
 

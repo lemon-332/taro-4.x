@@ -1,36 +1,21 @@
 <template>
   <div>
     <span class="title">{{ counter.count }}</span>
-    <div class="button" @tap="onAdd">ADD</div>
+    <nut-button class="button" @click="onAdd">ADD</nut-button>
   </div>
 </template>
 
-<script>
-import { useCounterStore } from '../stores/counter'
+<script setup>
+import { useStore } from '@/stores'
 
-export default {
-  setup() {
-    const counter = useCounterStore()
+const counter = useStore('count')
 
-    const onAdd = () => {
-      counter.count++
-
-      // with autocompletion ✨
-      // counter.$patch({count: counter.count + 1})
-
-      // or using an action instead
-      // counter.increment()
-    }
-
-    return {
-      counter,
-      onAdd
-    }
-  }
+const onAdd = () => {
+  counter.count++
 }
 </script>
 
-<style>
+<style lang="scss">
 .title {
   font-size: 32px;
 }
