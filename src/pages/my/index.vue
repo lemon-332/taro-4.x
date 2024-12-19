@@ -1,13 +1,15 @@
 <template>
   <div class="create">
     <nut-button @click="handelLocale">切换语言</nut-button>
-    {{ $t('common.confirm') }}
+    <nut-avatar><img :src="url" /></nut-avatar>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { setLocale, getLocale } from '@/utils/statusMange'
 import Taro from '@tarojs/taro'
+const url =
+  'https://img12.360buyimg.com/imagetools/jfs/t1/196430/38/8105/14329/60c806a4Ed506298a/e6de9fb7b8490f38.png'
 
 const handelLocale = () => {
   Taro.showModal({
