@@ -79,7 +79,7 @@ pnpm run dev:weapp
 ### 总结
 至此，终于完成了 Taro + Vue3 的项目搭建，可直接访问项目 [github 地址](https://github.com/lemon-332/taro-4.x) clone 使用，有一些配置细节本文无法一一列举，就在项目中去发掘吧！
 
-如果我的文章能帮助到你，就去给原创大佬的项目 star 一下吧，[项目地址](https://github.com/lemon-332/taro-4.x)
+如果我的文章能帮助到你，就去 star 一下吧，[项目地址](https://github.com/lemon-332/taro-4.x)
 
 
 
