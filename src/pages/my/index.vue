@@ -6,7 +6,6 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
 import { setLocale, getLocale } from '@/utils/statusMange'
 import Taro from '@tarojs/taro'
 
@@ -16,12 +15,7 @@ const handelLocale = () => {
     content: '切换语言需要重新进入小程序，是否确认切换',
     success: function (res) {
       if (res.confirm) {
-        const locale = getLocale()
-        if (locale === 'zh') {
-          setLocale('en')
-        } else {
-          setLocale('zh')
-        }
+        setLocale(getLocale() === 'zh' ? 'en' : 'zh')
         Taro.exitMiniProgram()
       }
     }

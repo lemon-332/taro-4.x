@@ -1,15 +1,7 @@
 <template>
-  <div class="create">
-    <Counter />
-  </div>
+  <div>create</div>
 </template>
 
-<script lang="ts" setup>
-import Counter from '@/components/Counter.vue'
-</script>
+<script lang="ts" setup></script>
 
-<style lang="scss">
-.create {
-  padding: 0 15px;
-}
-</style>
+<style lang="scss"></style>

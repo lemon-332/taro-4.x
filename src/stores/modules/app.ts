@@ -2,11 +2,11 @@ import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
 export const useAppStore = defineStore('app', () => {
-  const app = ref(3434)
+  const tabbar = ref(0)
 
-  function increment() {
-    app.value++
+  function changeTabbar(value) {
+    tabbar.value = value
   }
 
-  return { app, increment }
+  return { tabbar, changeTabbar }
 })

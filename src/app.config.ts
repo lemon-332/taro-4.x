@@ -17,25 +17,21 @@ export default {
     selectedColor: '#d81e06',
     borderStyle: 'black',
     backgroundColor: '#fff',
+    custom: true,
     list: [
       {
         pagePath: 'pages/create/index',
-        iconPath: 'assets/icons/user_default.png',
-        selectedIconPath: 'assets/icons/user_selected.png',
         text: '创建'
       },
       {
         pagePath: 'pages/find/index',
-        iconPath: 'assets/icons/user_default.png',
-        selectedIconPath: 'assets/icons/user_selected.png',
         text: '发现'
       },
       {
         pagePath: 'pages/my/index',
-        iconPath: 'assets/icons/user_default.png',
-        selectedIconPath: 'assets/icons/user_selected.png',
         text: '我的'
       }
     ]
-  }
+  },
+  usingComponents: {}
 }
