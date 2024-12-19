@@ -8,7 +8,7 @@
     >
       <template #icon>
         <img
-          :src="selected === index ? item.selectedIconPath : item.iconPath"
+          :src="selected === index ? user_selected : user_default"
           alt=""
           srcset=""
         />
@@ -20,6 +20,9 @@
 <script setup>
 import Taro from '@tarojs/taro'
 
+import user_default from '@/assets/icons/user_default.png'
+import user_selected from '@/assets/icons/user_selected.png'
+
 import { computed } from 'vue'
 import { useStore } from '@/stores'
 
@@ -29,20 +32,14 @@ const selected = computed(() => app.tabbar)
 const list = [
   {
     pagePath: '/pages/create/index',
-    selectedIconPath: '../assets/icons/user_selected.png',
-    iconPath: '../assets/icons/user_default.png',
     text: '创建'
   },
   {
     pagePath: '/pages/find/index',
-    selectedIconPath: '../assets/icons/user_selected.png',
-    iconPath: '../assets/icons/user_default.png',
     text: '发现'
   },
   {
     pagePath: '/pages/my/index',
-    selectedIconPath: '../assets/icons/user_selected.png',
-    iconPath: '../assets/icons/user_default.png',
     text: '我的'
   }
 ]
