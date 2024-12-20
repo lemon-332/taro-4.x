@@ -8,12 +8,11 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     Counter: typeof import('./src/components/Counter.vue')['default']
+    NutAnimate: typeof import('@nutui/nutui-taro')['Animate']
     NutAvatar: typeof import('@nutui/nutui-taro')['Avatar']
+    NutBarrage: typeof import('@nutui/nutui-taro')['Barrage']
     NutButton: typeof import('@nutui/nutui-taro')['Button']
-    NutCell: typeof import('@nutui/nutui-taro')['Cell']
-    NutEcard: typeof import('@nutui/nutui-taro')['Ecard']
-    NutSwiper: typeof import('@nutui/nutui-taro')['Swiper']
-    NutSwiperItem: typeof import('@nutui/nutui-taro')['SwiperItem']
-    NutVideo: typeof import('@nutui/nutui-taro')['Video']
+    NutCard: typeof import('@nutui/nutui-taro')['Card']
+    NutElevator: typeof import('@nutui/nutui-taro')['Elevator']
   }
 }
