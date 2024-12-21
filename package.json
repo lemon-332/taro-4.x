@@ -10,7 +10,8 @@
     "framework": "Vue3"
   },
   "scripts": {
-    "build:weapp": "NODE_ENV=production taro build --type weapp",
+    "build:weapp:win": "set NODE_ENV=production && taro build --type weapp",
+    "build:weapp:mac": "NODE_ENV=production taro build --type weapp",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
     "build:tt": "taro build --type tt",
@@ -18,7 +19,8 @@
     "build:rn": "taro build --type rn",
     "build:qq": "taro build --type qq",
     "build:quickapp": "taro build --type quickapp",
-    "dev:weapp": "npm run build:weapp -- --watch",
+    "dev:weapp:mac": "npm run build:weapp:mac -- --watch",
+    "dev:weapp:win": "npm run build:weapp:win -- --watch",
     "dev:swan": "npm run build:swan -- --watch",
     "dev:alipay": "npm run build:alipay -- --watch",
     "dev:tt": "npm run build:tt -- --watch",

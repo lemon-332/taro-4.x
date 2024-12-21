@@ -13,6 +13,11 @@ declare module 'vue' {
     NutBarrage: typeof import('@nutui/nutui-taro')['Barrage']
     NutButton: typeof import('@nutui/nutui-taro')['Button']
     NutCard: typeof import('@nutui/nutui-taro')['Card']
-    NutElevator: typeof import('@nutui/nutui-taro')['Elevator']
+    NutCell: typeof import('@nutui/nutui-taro')['Cell']
+    NutEcard: typeof import('@nutui/nutui-taro')['Ecard']
+    NutSwiper: typeof import('@nutui/nutui-taro')['Swiper']
+    NutSwiperItem: typeof import('@nutui/nutui-taro')['SwiperItem']
+    NutTabbar: typeof import('@nutui/nutui-taro')['Tabbar']
+    NutTabbarItem: typeof import('@nutui/nutui-taro')['TabbarItem']
   }
 }

@@ -68,7 +68,11 @@ pnpm run dev:h5
 
 ### 3.如果运行微信小程序 
 ```plain
-pnpm run dev:weapp
+## 如果运行在mac端
+pnpm run dev:weapp:mac
+
+## 如果运行在win端
+pnpm run dev:weapp:win
 ```
 
 > 运行成功之后，可以下载[微信小程序开发工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)，当然首先要去[微信小程序公众平台](https://mp.weixin.qq.com/?token=&lang=zh_CN)申请一个appid，之后就可以通过小程序开发工具，打开项目运行时候生成的dist目录的文件，这时就可以动态的开发啦
